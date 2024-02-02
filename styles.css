@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Homepage Styles */
+.homepage {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trending, .series, .recommended {
+    margin-bottom: 20px;
+}
+
+.movie, .series, .content {
+    margin-bottom: 15px;
+}
+
+.movie img, .series img, .content img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Content Details Page Styles */
+.content-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+/* Search Styles */
+.search-bar {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#searchResults {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-result {
+    flex-basis: calc(33.33% - 10px);
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* User Authentication Styles */
+.user-authentication {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginForm label {
+    margin-bottom: 5px;
+}
+
+#loginForm input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#loginForm button {
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.trending, .series, .recommended{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar input{
+    border: 2px solid green;
+    border-radius: 5px;
+    height: 30px;
+    width: 500px;
+}
+.search-bar input:focus{
+    border: 2px solid green;
+}
+.search-bar button{
+    margin-left: 5px;
+    font-size: 24px;
+    color: #fff;
+    background-color: rgb(4, 185, 4);
+    cursor: pointer;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+.search-bar button:hover{
+    background-color: rgb(0, 252, 0);
+}
+/* ... Add more styles as needed */

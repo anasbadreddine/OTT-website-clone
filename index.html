@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <title>OTT Website</title>
+</head>
+<body>
+
+    <!-- 3. Search Functionality -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="searchContent()">Search</button>
+    </div>
+    <div id="searchResults"></div>
+    
+    <!-- 1. Homepage -->
+    <div class="homepage">
+        <h2 style="text-align: center;">Trending Movies</h2>
+        <section class="trending">
+            
+            <div id="trendingMovies"></div>
+        </section>
+
+        <h2 style="text-align: center;">Trending Series</h2>
+        <section class="series">
+            <div id="trendingSeries"></div>
+        </section>
+
+        <h2 style="text-align: center;">Recommended Content</h2>
+        <section class="recommended">
+            <div id="recommendedContent"></div>
+        </section>
+    </div>
+
+    <!-- ... (Previous code) -->
+
+    <!-- 2. Content Details Page -->
+    <div class="content-details" style="display: none;">
+        <h2 id="contentTitle"></h2>
+        <div id="contentDetails"></div>
+    </div>
+
+    
+
+    <!-- 4. User Authentication (Optional) -->
+    <div class="user-authentication" style="display: none;">
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+        <p id="loginStatus"></p>
+    </div>
+
+    <!-- ... (Closing tags) -->
+
+</body>
+</html>
